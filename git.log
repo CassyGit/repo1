@@ -1,0 +1,99 @@
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git init
+Reinitialized existing Git repository in C:/Users/Kavita Dumbre/Documents/Git Demo/.git/
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git status
+On branch master
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        gitdemo.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git status
+On branch master
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        gitdemo.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        gitdemo2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git add gitdemo.html
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   gitdemo.html
+
+        gitdemo2.txt
+
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git status 
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   gitdemo.html
+  (use "git add <file>..." to include in what will be committed)
+        gitdemo2.txt
+        gitdemo3.ini
+
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git add *
+On branch master
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   gitdemo.html
+        new file:   gitdemo3.ini
+
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git branch
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git commit -m "v1 file"
+[master (root-commit) cdaa4de] v1 file
+ 3 files changed, 13 insertions(+)
+ create mode 100644 gitdemo.html
+ create mode 100644 gitdemo3.ini
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git branch
+* master
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git log
+commit cdaa4dea13ca7e3942668677b65787787d6492b5 (HEAD -> master)
+Author: kc <kc@gml.com>
+Date:   Wed Dec 11 12:38:11 2024 +0530
+
+    v1 file
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   gitdemo.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git diff  
+diff --git a/gitdemo.html b/gitdemo.html
+index 8536759..69d1c1a 100644
+--- a/gitdemo.html
++++ b/gitdemo.html
+@@ -7,5 +7,8 @@
+ </head>
+ <body>
+     <h1>git</h1>
++    <hr>
++    <h2>v2</h2>
++    <p>100 words Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, velit molestias dolores magnam corporis asperiores ex, quos corrupti consequatur sequi nam exercitationem suscipit vitae hic excepturi! Asperiores incidunt voluptatum laboriosam nam exercitationem similique, dolorum aliquid? Quisquam ullam est dolor repellat dolorem expedita cum labore eius temporibus, suscipit, ex laudantium natus quae amet voluptate odio sint et, vitae ratione beatae odit. Esse, unde maiores! Dolores possimus at officia esse nulla corrupti, quas dolorem iste perspiciatis repudiandae sint in cum maiores magni? Eos, laudantium consequuntur nisi doloremque consequatur illo dignissimos impedit provident? Harum iusto voluptatem 
+enim dicta id minus, fugit in expedita?</p>    
+ </body>
+ </html>
