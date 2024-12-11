@@ -97,3 +97,83 @@ index 8536759..69d1c1a 100644
 enim dicta id minus, fugit in expedita?</p>    
  </body>
  </html>
+
+
+ PS C:\Users\Kavita Dumbre\Documents\Git Demo> git show cdaa4dea13ca7e3942668677b65787787d6492b5:gitdemo3.ini
+this is  git demo3
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git checkout cdaa4dea13ca7e3942668677b65787787d6492b5 --gitdemo3.ini
+error: unknown option `gitdemo3.ini'
+usage: git checkout [<options>] <branch>
+   or: git checkout [<options>] [<branch>] -- <file>...
+
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --[no-]guess          second guess 'git checkout <no-such-branch>' (default)
+    --[no-]overlay        use overlay mode (default)
+    -q, --[no-]quiet      suppress progress reporting
+    --[no-]recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --[no-]progress       force progress reporting
+    -m, --[no-]merge      perform a 3-way merge with the new branch
+    --[no-]conflict <style>
+                          conflict style (merge, diff3, or zdiff3)
+    -d, --[no-]detach     detach HEAD at named commit
+    -t, --[no-]track[=(direct|inherit)]
+    -f, --[no-]force      force checkout (throw away local modifications)
+    --[no-]orphan <new-branch>
+                          new unborn branch
+    --[no-]overwrite-ignore
+                          update ignored files (default)
+    --[no-]ignore-other-worktrees
+                          do not check if another worktree is using this branch
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -p, --[no-]patch      select hunks interactively
+    --[no-]ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git checkout cdaa4dea13ca7e3942668677b65787787d6492b5 --gitdemo.html
+error: unknown option `gitdemo.html'
+usage: git checkout [<options>] <branch>
+   or: git checkout [<options>] [<branch>] -- <file>...
+
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --[no-]guess          second guess 'git checkout <no-such-branch>' (default)
+    --[no-]overlay        use overlay mode (default)
+    -q, --[no-]quiet      suppress progress reporting
+    --[no-]recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --[no-]progress       force progress reporting
+    -m, --[no-]merge      perform a 3-way merge with the new branch
+    --[no-]conflict <style>
+                          conflict style (merge, diff3, or zdiff3)
+    -d, --[no-]detach     detach HEAD at named commit
+    -t, --[no-]track[=(direct|inherit)]
+                          update ignored files (default)
+    --[no-]ignore-other-worktrees
+                          do not check if another worktree is using this branch
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -p, --[no-]patch      select hunks interactively
+    --[no-]ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git checkout cdaa4dea13ca7e3942668677b65787787d6492b5 -- gitdemo.html 
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git checkout cdaa4dea13ca7e3942668677b65787787d6492b5 -- gitdemo.html
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git checkout cdaa4dea13ca7e3942668677b65787787d6492b5 -- gitdemo.html
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git checkout master -- *
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git status
+On branch master
+nothing to commit, working tree clean
+PS C:\Users\Kavita Dumbre\Documents\Git Demo>
