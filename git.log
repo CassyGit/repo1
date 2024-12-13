@@ -242,6 +242,8 @@ PS C:\Users\Kavita Dumbre\Documents\Git Demo>
 
 
 
+
+
 PS C:\Users\Kavita Dumbre\Documents\Git Demo> git remote add origin https://github.com/CassyGit/repo1.git
 error: remote origin already exists.
 PS C:\Users\Kavita Dumbre\Documents\Git Demo> git remote update origin https://github.com/CassyGit/repo1.git
@@ -269,4 +271,283 @@ remote: Resolving deltas: 100% (3/3), done.
 To https://github.com/CassyGit/repo1.git
  * [new branch]      main -> main
 branch 'main' set up to track 'origin/main'.
-PS C:\Users\Kavita Dumbre\Documents\Git Demo>                                                                      
+PS C:\Users\Kavita Dumbre\Documents\Git Demo>   
+
+
+
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git commit -m "v5 "                                            
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)        
+        deleted:    README.md
+        modified:   git.log
+        modified:   gitdemo.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+        modified:   git.log
+        modified:   gitdemo.html
+
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git commit -m "v5 "
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    README.md
+        modified:   git.log
+
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git add *
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git commit -m "v5 "
+ 3 files changed, 94 insertions(+)
+ delete mode 100644 README.md
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git push
+Enumerating objects: 7, done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.32 KiB | 451.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/CassyGit/repo1.git
+   3c47ce3..6785c4e  main -> main
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git remote
+origin
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git remote -v
+origin  https://github.com/CassyGit/repo1.git (fetch)
+origin  https://github.com/CassyGit/repo1.git (push)
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git pll
+git: 'pll' is not a git command. See 'git --help'.
+
+The most similar command is
+        pull
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 950 bytes | 3.00 KiB/s, done.
+From https://github.com/CassyGit/repo1
+   6785c4e..bc4c4ad  main       -> origin/main
+Updating 6785c4e..bc4c4ad
+Fast-forward
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> 
+
+
+
+
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   git.log
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git log      
+commit bc4c4adbc0d67d84ae522fe4b2dd69102288985c (HEAD -> main, origin/main)
+Author: CassyGit <kchourasiyaperamalserviceprotonmail@proton.me>
+Date:   Fri Dec 13 16:27:28 2024 +0530
+
+    Create README.md
+
+commit 6785c4e2a752ad505f897b91746c877dc9017f21
+Author: kc <kc@gml.com>
+Date:   Fri Dec 13 16:18:58 2024 +0530
+
+    v5
+
+commit 3c47ce36c89892f1cec669ca30e1bf09208c3e10
+Author: kc <kc@gml.com>
+Date:   Wed Dec 11 15:31:45 2024 +0530
+
+    v4 First Commit in Remote Repo
+
+commit 97492b8172425e069468c29bbde5441e553523bf
+Author: kc <kc@gml.com>
+Date:   Wed Dec 11 13:10:01 2024 +0530
+
+    v3 files
+
+commit 360ff49ee35429a938fda7979a9a4aaaee96591e
+Author: kc <kc@gml.com>
+Date:   Wed Dec 11 13:06:34 2024 +0530
+
+    v2 files
+
+commit cdaa4dea13ca7e3942668677b65787787d6492b5
+Author: kc <kc@gml.com>
+Date:   Wed Dec 11 12:38:11 2024 +0530
+
+    v1 file
+(END)
+
+
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git log      
+commit bc4c4adbc0d67d84ae522fe4b2dd69102288985c (HEAD -> main, origin/main)
+Author: CassyGit <kchourasiyaperamalserviceprotonmail@proton.me>
+Date:   Fri Dec 13 16:27:28 2024 +0530
+
+    Create README.md
+
+commit 6785c4e2a752ad505f897b91746c877dc9017f21
+Author: kc <kc@gml.com>
+Date:   Fri Dec 13 16:18:58 2024 +0530
+
+    v5
+
+commit 3c47ce36c89892f1cec669ca30e1bf09208c3e10
+Author: kc <kc@gml.com>
+Date:   Wed Dec 11 15:31:45 2024 +0530
+
+    v4 First Commit in Remote Repo
+
+
+commit 97492b8172425e069468c29bbde5441e553523bf
+Author: kc <kc@gml.com>
+Date:   Wed Dec 11 13:10:01 2024 +0530
+
+    v3 files
+
+commit 360ff49ee35429a938fda7979a9a4aaaee96591e
+Author: kc <kc@gml.com>
+Date:   Wed Dec 11 13:06:34 2024 +0530
+
+    v2 files
+
+Author: kc <kc@gml.com>
+Date:   Wed Dec 11 12:38:11 2024 +0530
+
+    v1 file
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git log
+commit bc4c4adbc0d67d84ae522fe4b2dd69102288985c (HEAD -> main, origin/main)
+Author: CassyGit <kchourasiyaperamalserviceprotonmail@proton.me>
+Date:   Fri Dec 13 16:27:28 2024 +0530
+
+    Create README.md
+
+commit 6785c4e2a752ad505f897b91746c877dc9017f21
+Author: kc <kc@gml.com>
+Date:   Fri Dec 13 16:18:58 2024 +0530
+
+    v5
+
+commit 3c47ce36c89892f1cec669ca30e1bf09208c3e10
+Author: kc <kc@gml.com>
+Date:   Wed Dec 11 15:31:45 2024 +0530
+
+    v4 First Commit in Remote Repo
+commit 97492b8172425e069468c29bbde5441e553523bf
+Author: kc <kc@gml.com>
+Date:   Wed Dec 11 13:10:01 2024 +0530
+
+    v3 files
+
+commit 360ff49ee35429a938fda7979a9a4aaaee96591e
+Author: kc <kc@gml.com>
+Date:   Wed Dec 11 13:06:34 2024 +0530
+
+    v2 files
+
+commit cdaa4dea13ca7e3942668677b65787787d6492b5
+Author: kc <kc@gml.com>
+Date:   Wed Dec 11 12:38:11 2024 +0530
+
+    v1 file
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git log
+Author: CassyGit <kchourasiyaperamalserviceprotonmail@proton.me>
+Date:   Fri Dec 13 16:27:28 2024 +0530
+
+    Create README.md
+
+commit 6785c4e2a752ad505f897b91746c877dc9017f21
+Author: kc <kc@gml.com>
+Date:   Fri Dec 13 16:18:58 2024 +0530
+
+    v5
+
+commit 3c47ce36c89892f1cec669ca30e1bf09208c3e10
+Date:   Wed Dec 11 15:31:45 2024 +0530
+
+    v4 First Commit in Remote Repo
+
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git pull  
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 966 bytes | 4.00 KiB/s, done.
+From https://github.com/CassyGit/repo1
+   bc4c4ad..f66b91b  main       -> origin/main
+Updating bc4c4ad..f66b91b
+Fast-forward
+ remotelyaddfile.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 remotelyaddfile.txt
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git log   
+commit f66b91b3acece7f1458bd28a54729b4f0de92ba4 (HEAD -> main, origin/main)
+Author: CassyGit <190578041+CassyGit@users.noreply.github.com>
+Date:   Fri Dec 13 16:40:32 2024 +0530
+
+    remotely add new file named remotelyaddfile.txt
+
+commit bc4c4adbc0d67d84ae522fe4b2dd69102288985c
+Author: CassyGit <kchourasiyaperamalserviceprotonmail@proton.me>
+Date:   Fri Dec 13 16:27:28 2024 +0530
+
+    Create README.md
+
+commit 6785c4e2a752ad505f897b91746c877dc9017f21
+Author: kc <kc@gml.com>
+Date:   Fri Dec 13 16:18:58 2024 +0530
+
+    v5
+
+commit 3c47ce36c89892f1cec669ca30e1bf09208c3e10
+Author: kc <kc@gml.com>
+Date:   Wed Dec 11 15:31:45 2024 +0530
+
+    v4 First Commit in Remote Repo
+
+commit 97492b8172425e069468c29bbde5441e553523bf
+Author: kc <kc@gml.com>
+Date:   Wed Dec 11 13:10:01 2024 +0530
+
+    v3 files
+
+commit 360ff49ee35429a938fda7979a9a4aaaee96591e
+Author: kc <kc@gml.com>
+Date:   Wed Dec 11 13:06:34 2024 +0530
+
+    v2 files
+
+commit cdaa4dea13ca7e3942668677b65787787d6492b5
+Author: kc <kc@gml.com>
+Date:   Wed Dec 11 12:38:11 2024 +0530
+
+    v1 file
