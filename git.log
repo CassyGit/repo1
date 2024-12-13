@@ -177,3 +177,96 @@ PS C:\Users\Kavita Dumbre\Documents\Git Demo> git status
 On branch master
 nothing to commit, working tree clean
 PS C:\Users\Kavita Dumbre\Documents\Git Demo>
+
+
+
+
+
+commit 97492b8172425e069468c29bbde5441e553523bf (HEAD -> master)
+Author: kc <kc@gml.com>
+Date:   Wed Dec 11 13:10:01 2024 +0530
+
+    v3 files
+Author: kc <kc@gml.com>
+    v2 files
+
+commit cdaa4dea13ca7e3942668677b65787787d6492b5
+
+    v1 file
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git status
+On branch master
+Changes to be committed:
+
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> echo "#myrepo" >> README.md
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git init
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git add README.md  
+[master 3c47ce3] v4 First Commit in Remote Repo
+ 2 files changed, 81 insertions(+), 1 deletion(-)
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git branch -M main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+and the repository exists.
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git push -u origin main
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git remote add origin https://github.com/CassyGit/repo_from_cmd_line.git
+error: remote origin already exists.
+remote: Repository not found.
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git remote add origin https://github.com/CassyGit/repo1.git
+error: remote origin already exists.
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> 
+PS C:\Users\Kavita Dumbre\Documents\Git Demo>
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git remote add origin https://github.com/CassyGit/repo1.git
+error: remote origin already exists.
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git push -u origin main
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git remote add origin https://github.com/CassyGit/repo1.git
+error: remote origin already exists.
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git branch -M main
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git push -u origin main
+fatal: unable to access 'https://github.com/CassyGit/repo_from_cmd_line.git/': Failed to connect to github.com port 443 after 21103 ms: Could not 
+connect to server
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git remote add origin https://github.com/CassyGit/repo1.git
+error: remote origin already exists.
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git init
+Reinitialized existing Git repository in C:/Users/Kavita Dumbre/Documents/Git Demo/.git/
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git add README.md
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git commit -m "v4 First Commit in Remote Repo "
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git remote add origin https://github.com/CassyGit/repo1.git
+error: remote origin already exists.
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git branch -M main
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git push -u origin main
+fatal: unable to access 'https://github.com/CassyGit/repo_from_cmd_line.git/': Failed to connect to github.com port 443 after 21071 ms: Could not 
+connect to server
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> 
+
+
+
+
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git remote add origin https://github.com/CassyGit/repo1.git
+error: remote origin already exists.
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git remote update origin https://github.com/CassyGit/repo1.git
+fatal: no such remote or remote group: https://github.com/CassyGit/repo1.git
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> 
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git branch -M main                                            
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git push -u origin main                                       
+fatal: unable to access 'https://github.com/CassyGit/repo_from_cmd_line.git/': Failed to connect to github.com port 443 after 21105 ms: Could not 
+connect to server
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git push -u origin main
+info: please complete authentication in your browser...
+remote: Repository not found.
+fatal: repository 'https://github.com/CassyGit/repo_from_cmd_line.git/' not found
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git remote set-url origin https://github.com/CassyGit/repo1.git
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git branch -M main     
+PS C:\Users\Kavita Dumbre\Documents\Git Demo> git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (16/16), 3.70 KiB | 379.00 KiB/s, done.
+Total 16 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/CassyGit/repo1.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\Kavita Dumbre\Documents\Git Demo>                                                                      
